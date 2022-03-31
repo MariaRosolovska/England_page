@@ -31,6 +31,7 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -41,7 +42,8 @@
     <div class="header__top" style="background-image: url(./images/header.jpg);">
       <div class="header__top-inner">
 
-        <h1 class="header__title">
+        <h1 class="header__title" data-aos="fade-down"
+        data-aos-easing="linear">
           Англія
         </h1>
 
@@ -60,7 +62,9 @@
         <span></span>
       </div>
 
-      <ul class="menu__list">
+      <ul class="menu__list" data-aos="fade-right"
+                             data-aos-offset="40"
+                             data-aos-easing="ease-in-sine">
         <li class="menu__list-item">
           <a class="menu__list-link" href="#">Резюме</a>
         </li>
@@ -86,7 +90,9 @@
     </nav>
   </header>
 
-  <section class="reason">
+  <section class="reason" data-aos="fade-up"
+                          data-aos-anchor-placement="top-bottom"
+                          data-aos-offset="300">
     <div class="container section-line">
 
       <h2 class="reason__title title">Чому тобі сподобається Англія?</h2>
@@ -132,9 +138,9 @@
   <section class="about">
     <div class="container">
       <div class="container-content">
-        <h2 class="about__title title">Лондон - це...</h2>
+        <h2 class="about__title title" data-aos="zoom-out">Лондон - це...</h2>
 
-        <div class="about__text">
+        <div class="about__text" data-aos="zoom-out" data-aos-offset="300" >
 
           <p>Лондон одне з найкрасивіших міст світу. Найбільше місто Європи та шістнадцяте 
             за розміром у світі воно має чим здивувати численних туристів.
@@ -162,7 +168,7 @@
 
         </div>
 
-        <div class="about__item" style="background-image: url('./images/box-images/1-london.webp');">
+        <div class="about__item" style="background-image: url('./images/box-images/1-london.webp');" data-aos="zoom-in-down">
           <div class="about__box">
             <h3 class="about__box-title">Лондон</h3>
             <p class="about__box-text">Найпопулярніше місто у світі не боїться змінюватися – ні в архітектурі, 
@@ -173,7 +179,7 @@
           </div>
         </div>
 
-        <div class="about__item" style="background-image: url('./images/box-images/2-portlend.webp');">
+        <div class="about__item" style="background-image: url('./images/box-images/2-portlend.webp');" data-aos="zoom-in-down">
           <div class="about__box">
             <h3 class="about__box-title">Портленд, Англія</h3>
             <p class="about__box-text">У гавані Портленду розташовується Національна академія вітрильного спорту.
@@ -183,7 +189,7 @@
           </div>
         </div>
 
-        <div class="about__item" style="background-image: url('./images/box-images/3-ozernyy-kray.jpg');">
+        <div class="about__item" style="background-image: url('./images/box-images/3-ozernyy-kray.jpg');" data-aos="zoom-in-down">
           <div class="about__box">
             <h3 class="about__box-title">Озерний Край, Англія</h3>
             <p class="about__box-text">Озерний край, колись відокремлений і порівняно бідний, полюбився англійцям за дивовижну красу всіх шістнадцяти озер, 
@@ -195,7 +201,9 @@
         </div>
       </div>
 
-      <div class="about__preview section-line">
+      <div class="about__preview section-line" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
 
         <h2 class="about__preview-title title">
           English Bus
@@ -222,7 +230,7 @@
 
         </div>
 
-        <div class="about__preview-text container-content">
+        <div class="about__preview-text container-content" data-aos="zoom-out">
 
           <p >
             Червоний двоповерховий автобус є візитною карткою Великобританії.
@@ -245,7 +253,7 @@
   </section>
 
   <section class="photo">
-    <div class="container">
+    <div class="container" data-aos="zoom-out">
       <h2 class="photo__title title">Англія у фото</h2>
       <p class="photo__text container-content">Великобританія - це красива і велична острівна держава з цікавою 
         історією та вражаючими, живописними краєвидами. Люди в цій країні дуже привітні і виховані, манерні. 
@@ -256,7 +264,7 @@
         Навесні на півночі панують холодні вітри і стоять тумани, в цей же час на півдні – оксамитова погода. 
         Літо і осінь приносять з собою свіжі морські бризи.
     </p>
-    <div class="photo__slider" >
+    <div class="photo__slider" data-aos="flip-right" >
       <img class="photo__img" src="./images/button/slider1.jpg" alt="" >
       <img class="photo__img" src="./images/button/slider2.jpg" alt="" >
       <img class="photo__img" src="./images/header.jpg" alt="" >
@@ -320,6 +328,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="./js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
